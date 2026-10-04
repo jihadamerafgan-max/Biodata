@@ -234,22 +234,37 @@
 
     if(!contactForm) return;
 
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        submitBtn.innerHTML = '<span class="icon" style="width:16px;height:16px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span> Sent!';
-        successMsg.classList.add('show');
+      const formData = new FormData(contactForm);
 
-        setTimeout(() => {
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          submitBtn.innerHTML = '<span class="icon" style="width:16px;height:16px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span> Sent!';
+          successMsg.classList.add('show');
           contactForm.reset();
-          submitBtn.innerHTML = '<span class="icon" style="width:16px;height:16px"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></span> Send Message';
-          submitBtn.disabled = false;
-          successMsg.classList.remove('show');
-        }, 3000);
-      }, 1500);
+        } else {
+          submitBtn.innerHTML = 'Error! Try again';
+        }
+      } catch (error) {
+        submitBtn.innerHTML = 'Error! Try again';
+      }
+
+      setTimeout(() => {
+        submitBtn.innerHTML = '<span class="icon" style="width:16px;height:16px"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></span> Send Message';
+        submitBtn.disabled = false;
+        successMsg.classList.remove('show');
+      }, 3000);
     });
   }
 
