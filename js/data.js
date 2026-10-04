@@ -23,7 +23,7 @@ window.PORTFOLIO_DATA = {
     email: "amrfgn10@gmail.com",
     social: {
       instagram: "https://instagram.com/_amerafgan",
-      whatsapp: "https://wa.me/087853578623",
+      whatsapp: "https://wa.me/@amfgn10",
       tiktok: "https://tiktok.com/@_amerafgan",
       linkedin: "https://linkedin.com/in/Jihad%20Amerafgan",
       email: "mailto:amrfgn10@gmail.com"
@@ -139,7 +139,7 @@ window.PORTFOLIO_DATA = {
       },
       {
         keywords: ["hubungi", "contact", "kontak", "email"],
-        answer: "Anda dapat menghubungi Jihad melalui:<br><br>📧 Email: <a href=\"mailto:amrfgn10@gmail.com\">amrfgn10@gmail.com</a><br>📱 WhatsApp: <a href=\"https://wa.me/087853578623\" target=\"_blank\">087853578623</a><br>💼 <a href=\"https://linkedin.com/in/Jihad%20Amerafgan\" target=\"_blank\">LinkedIn Profile</a><br>📸 <a href=\"https://instagram.com/_amerafgan\" target=\"_blank\">Instagram</a><br>🎵 <a href=\"https://tiktok.com/@_amerafgan\" target=\"_blank\">TikTok</a><br><br>Atau langsung mengisi form kontak di website ini!"
+        answer: "Anda dapat menghubungi Jihad melalui:<br><br>📧 Email: <a href=\"mailto:amrfgn10@gmail.com\">amrfgn10@gmail.com</a><br>📱 WhatsApp: <a href=\"https://wa.me/@amfgn10\" target=\"_blank\">@amfgn10</a><br>💼 <a href=\"https://linkedin.com/in/Jihad%20Amerafgan\" target=\"_blank\">LinkedIn Profile</a><br>📸 <a href=\"https://instagram.com/_amerafgan\" target=\"_blank\">Instagram</a><br>🎵 <a href=\"https://tiktok.com/@_amerafgan\" target=\"_blank\">TikTok</a><br><br>Atau langsung mengisi form kontak di website ini!"
       },
       {
         keywords: ["project", "proyek", "portfolio", "karya"],
