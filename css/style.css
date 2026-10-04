@@ -49,6 +49,8 @@
   --icon-color: #a3a3a3;
   --icon-muted: #525252;
   --green-dot: #4ade80;
+  --web-color: #e0e0e0;
+  --spidey-shadow: rgba(0,0,0,0.6);
 }
 
 /* Light Theme */
@@ -87,6 +89,8 @@
   --icon-color: #525252;
   --icon-muted: #a3a3a3;
   --green-dot: #22c55e;
+  --web-color: #cccccc;
+  --spidey-shadow: rgba(0,0,0,0.2);
 }
 
 /* Reset */
@@ -133,14 +137,48 @@ img { display: block; max-width: 100%; }
   transition: opacity 0.8s ease, visibility 0.8s ease;
 }
 #splash-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-.splash-spinner {
-  width: 44px; height: 44px; margin: 0 auto;
-  border: 3px solid var(--splash-spinner-border);
-  border-top-color: var(--splash-spinner-top);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+.spidey-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -100%);
+  animation: drop-and-pull 6s infinite;
+  filter: drop-shadow(0 10px 10px var(--spidey-shadow));
+  will-change: transform;
+  z-index: 1;
 }
-@keyframes spin { to { transform: rotate(360deg); } }
+.web-line {
+  width: 2px;
+  height: 100vh;
+  background-color: var(--web-color);
+  margin-bottom: -5px;
+}
+@keyframes drop-and-pull {
+  0% { transform: translate(-50%, -100%); }
+  15% {
+    transform: translate(-50%, calc(-100% + 50vh - 20px));
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  25%, 75% { transform: translate(-50%, calc(-100% + 50vh - 20px)); }
+  85% {
+    transform: translate(-50%, -100%);
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  }
+  100% { transform: translate(-50%, -100%); }
+}
+.spidey-arm {
+  transform-origin: 45px 70px;
+  animation: spidey-wave 2s ease-in-out infinite;
+}
+@keyframes spidey-wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(35deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(35deg); }
+}
 .splash-label {
   font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase;
   color: var(--text-muted); margin-top: 24px;
