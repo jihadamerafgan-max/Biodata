@@ -142,16 +142,12 @@ window.PORTFOLIO_DATA = {
         answer: "Anda dapat menghubungi Jihad melalui:<br><br>📧 Email: <a href=\"mailto:amrfgn10@gmail.com\">amrfgn10@gmail.com</a><br>📱 WhatsApp: <a href=\"https://wa.me/6287853578623\" target=\"_blank\">@amfgn10</a><br>💼 <a href=\"https://linkedin.com/in/Jihad%20Amerafgan\" target=\"_blank\">LinkedIn Profile</a><br>📸 <a href=\"https://instagram.com/_amerafgan\" target=\"_blank\">Instagram</a><br>🎵 <a href=\"https://tiktok.com/@_amerafgan\" target=\"_blank\">TikTok</a><br><br>Atau langsung mengisi form kontak di website ini!"
       },
       {
-        keywords: ["project", "proyek", "portfolio", "karya"],
-        answer: "Jihad telah mengerjakan beberapa proyek menarik:<br><br>🌐 Personal Portfolio Website<br>📊 Data Visualization Dashboard<br>🚁 Aerial Photography Collection<br><br>Kunjungi bagian Projects untuk detail lengkapnya!"
-      },
-      {
         keywords: ["pengalaman", "experience", "kerja"],
         answer: "Perjalanan karir Jihad:<br><br>📌 <b>2026</b> — Freelance Programmer & Drone Pilot<br>📌 <b>2024</b> — Freelance Web Developer & Drone Pilot<br>📌 <b>2023</b> — Learning & Personal Projects<br>📌 <b>2019</b> — IT & Network Intern (PT Telkom Indonesia)<br><br>Selengkapnya di bagian Experience!"
       },
       {
         keywords: ["halo", "hai", "hello", "hi"],
-        answer: "Halo juga! 👋 Senang bertemu dengan Anda! Ada yang ingin diketahui tentang Jihad Amerafgan? Saya bisa menceritakan tentang keahliannya, pengalaman kerja, proyek-proyek, atau cara menghubunginya."
+        answer: "Halo juga! 👋 Senang bertemu dengan Anda! Ada yang ingin diketahui tentang Jihad Amerafgan? Saya bisa menceritakan tentang keahliannya, pengalaman kerja, atau cara menghubunginya."
       },
       {
         keywords: ["drone", "pilot", "aerial"],
@@ -162,7 +158,7 @@ window.PORTFOLIO_DATA = {
         answer: "Sama-sama! 😊 Senang bisa membantu. Jangan ragu untuk bertanya lagi kapan saja! 🙌"
       }
     ],
-    fallback: "Terima kasih atas pertanyaannya! Saya bisa membantu Anda dengan informasi tentang:<br><br>👤 Siapa Jihad Amerafgan<br>🛠️ Keahlian & Tech Stack<br>💼 Pengalaman Kerja<br>📂 Proyek-proyek<br>📬 Cara menghubungi<br>🚁 Aktivitas Drone<br><br>Silakan tanyakan salah satu topik di atas! 😊"
+    fallback: "Terima kasih atas pertanyaannya! Saya bisa membantu Anda dengan informasi tentang:<br><br>👤 Siapa Jihad Amerafgan<br>🛠️ Keahlian<br>💼 Pengalaman Kerja<br>📬 Cara menghubungi<br>🚁 Aktivitas Drone<br><br>Silakan tanyakan salah satu topik di atas! 😊"
   },
 
   /* ---- Navigation ---- */
